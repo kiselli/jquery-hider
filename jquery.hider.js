@@ -6,22 +6,23 @@
 		wrapper: "wrapper",
 		header: "header",
 		content: "content",
-		time: "200"
+		time: 200
 	}, options);
 
 	//create class strings
 	var wrapper = "." + myoptions.wrapper;
 	var header = "." + myoptions.header;
 	var content = "." + myoptions.content;
+	var time = myoptions.time;
 
 	//hide and show handling
 	$(header).click(function() {
 	var content_div = $(this).next(content);
 
 	if (content_div.css('display') == 'none') {
-		  	content_div.slideDown(200);
+		  	content_div.slideDown(time);
 	} else {
-		  	content_div.slideUp(200);
+		  	content_div.slideUp(time);
 		}
 	});
   };
