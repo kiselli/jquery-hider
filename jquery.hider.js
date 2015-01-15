@@ -15,10 +15,15 @@
 	var content = "." + myoptions.content;
 	var time = myoptions.time;
 
+	var _header = $(header);
+	
+	//hide on init	
+	_header.next(content).css('display','none');		
+	
 	//hide and show handling
-	$(header).click(function() {
+	_header.click(function() {
 	var content_div = $(this).next(content);
-
+	
 	if (content_div.css('display') == 'none') {
 		  	content_div.slideDown(time);
 	} else {

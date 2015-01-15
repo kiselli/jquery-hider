@@ -16,7 +16,7 @@ In your HTML:
 ```HTML
 <div class="wrapper">
     <div class="header">Click me to expand &gt;&gt;</div>
-    <div class="content" style="display: none;">
+    <div class="content">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
         sed diam nonumy eirmod tempor invidunt ut labore et 
         dolore magna aliquyam erat, sed diam voluptua. At vero 
@@ -24,5 +24,3 @@ In your HTML:
     </div>
 </div>
 ```
-
-Don't forget to use `style="display: none;"` on your content, otherwise it will be displayed at the page view
